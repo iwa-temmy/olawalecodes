@@ -6,7 +6,7 @@
   .hero {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
 
     main {
@@ -63,6 +63,7 @@
   .home {
     .hero {
       flex-direction: column-reverse;
+      gap: 2rem;
 
       main {
         margin-top: 0rem;

@@ -9,10 +9,8 @@ const Home = () => {
       <section className="hero">
         <main>
           <p>Hi, I'm Olawale</p>
-          <h1>Frontend Developer based In Lagos, Nigeria</h1>
-          <p>Focused in creating webpages that strike a balance between functional and aesthetic designs.
-            I love building websites, applications provide pixel-perfect, High quality performant experiences and solve problems.I’m always interested in hearing about new projects and opportunities.
-          </p>
+          <h1>Frontend Developer.Aspiring FullStack Developer</h1>
+          <p>Based In Oyo State, Nigeria.Focused in creating webpages that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthussiast</p>
         </main>
         <aside>
           <img src={Mee} alt="Iwaloye Olawale Samuel" />
