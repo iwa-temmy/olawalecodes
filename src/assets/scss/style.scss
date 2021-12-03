@@ -1,5 +1,46 @@
 @import "_base";
 
+.home {
+  max-height: 100vh;
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+
+    main {
+      // width: 60%;
+      margin: 2rem;
+      margin-top: -6rem;
+
+      h1 {
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 1.0625;
+        font-weight: 600;
+        letter-spacing: -.01em;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 21px;
+        letter-spacing: -.01em;
+        line-height: 1.38105;
+      }
+    }
+
+    aside {
+      // width: 70%;
+
+      img {
+        width: fit-content;
+        height: calc(100vh - 110px);
+      }
+    }
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from "../../assets/images/logo3.svg";
 import { Link } from 'react-router-dom';
 import * as GiIcons from "react-icons/gi";
+import * as AiIcons from 'react-icons/ai';
 
 const Navbar = () => {
   const [opennav, setopennav] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <img src={logo} alt="Logo" className="logo" />
-      <button className="nav-toggle" onClick={(e) => handleNavToggle(e)}><GiIcons.GiHamburgerMenu /></button>
+      <button className="nav-toggle" onClick={(e) => handleNavToggle(e)}>{opennav ? <AiIcons.AiOutlineClose /> : <GiIcons.GiHamburgerMenu />}</button>
       <nav>
         <ul className={opennav ? "navlinks sr-only" : "navlinks"} >
           <li><Link to="/">Home</Link></li>
