@@ -14,7 +14,7 @@ const Navbar = () => {
       <img src={logo} alt="Logo" className="logo" />
       <button className="nav-toggle" onClick={(e) => handleNavToggle(e)}><GiIcons.GiHamburgerMenu /></button>
       <nav>
-        <ul className={opennav ? "navlinks" : ""}>
+        <ul className={opennav ? "navlinks sr-only" : "navlinks"} >
           <li><Link to="/">Home</Link></li>
           <li><Link to="/">About</Link></li>
           <li><Link to="/">Work</Link></li>

@@ -8,6 +8,7 @@ body {
   color: #fff;
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -21,7 +22,4 @@ a {
   text-decoration: none;
   font-weight: 600;
   margin-inline-end: 0.75em;
-}
-.sr-only{
-  display: block;
 }
