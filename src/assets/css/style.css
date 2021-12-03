@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
   margin: 2rem;
 }
 
@@ -22,13 +22,54 @@ a {
   margin-inline-end: 0.75em;
 }
 
+.sr-only {
+  display: block;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.navbar .nav-toggle {
+  display: none;
+}
 .navbar .navlinks {
   display: flex;
   list-style: none;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 35em) {
+  .navbar {
+    z-index: 1000;
+  }
+  .navbar .navlinks {
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 4em;
+    background: rgba(0, 0, 0, 0.75);
+    gap: 3rem;
+  }
+  .navbar .nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    top: 2rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    aspect-ratio: 1;
+    right: 2rem;
+    font-size: 24px;
+  }
+  @supports (backdrop-filter: blur(2rem)) {
+    .navbar .navlinks {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(2rem);
+    }
+  }
 }

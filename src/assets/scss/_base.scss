@@ -11,7 +11,7 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
   margin: 2rem;
 }
 
@@ -21,4 +21,7 @@ a {
   text-decoration: none;
   font-weight: 600;
   margin-inline-end: 0.75em;
+}
+.sr-only{
+  display: block;
 }
