@@ -19,8 +19,28 @@ a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
   margin-inline-end: 0.75em;
+}
+
+.active {
+  border-bottom: 2px solid white;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-toggle {
+  display: none;
+}
+.navbar .navlinks {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .home {
@@ -52,22 +72,6 @@ a {
 .home .hero aside img {
   width: fit-content;
   height: calc(100vh - 110px);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar .nav-toggle {
-  display: none;
-}
-.navbar .navlinks {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
 }
 
 @media (max-width: 35em) {

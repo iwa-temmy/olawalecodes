@@ -20,6 +20,10 @@ a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
   margin-inline-end: 0.75em;
+}
+
+.active{
+  border-bottom: 2px solid white;
+  font-weight: 600;
 }

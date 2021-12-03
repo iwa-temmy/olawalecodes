@@ -1,5 +1,26 @@
 @import "_base";
 
+//Navbar Styles
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .navlinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+//Home Page Styles
 .home {
   max-height: 100vh;
 
@@ -40,25 +61,7 @@
   }
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .nav-toggle {
-    display: none;
-  }
-
-  .navlinks {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-
-  }
-}
-
+//Media Query
 @media (max-width: 35em) {
   .home {
     .hero {
