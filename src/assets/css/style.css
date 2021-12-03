@@ -25,6 +25,7 @@ a {
 .active {
   border-bottom: 2px solid white;
   font-weight: 600;
+  width: fit-content;
 }
 
 .navbar {
