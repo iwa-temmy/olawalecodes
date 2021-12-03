@@ -1,0 +1,15 @@
+@import "_base";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .navlinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    
+  }
+}
