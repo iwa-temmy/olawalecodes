@@ -27,9 +27,9 @@ const Navbar = () => {
       <nav>
         <ul className={opennav ? "navlinks sr-only" : "navlinks"} >
           <li className={splitLocation[1] === "" ? "active" : ""}><Link to="/">Home</Link></li>
-          <li><Link to="/">About</Link></li>
-          <li><Link to="/">Work</Link></li>
-          <li><Link to="/">Resume</Link></li>
+          <li className={splitLocation[1] === "about" ? "active" : ""}><Link to="/about">About</Link></li>
+          <li className={splitLocation[1] === "work" ? "active" : ""}><Link to="/work">Work</Link></li>
+          <li className={splitLocation[1] === "resume" ? "active" : ""}><Link to="/resume">Resume</Link></li>
         </ul>
       </nav>
     </header>
