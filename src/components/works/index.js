@@ -1,5 +1,8 @@
 import React from 'react'
 import Navbar from '../navbar';
+import * as FiIcons from "react-icons/fi";
+import * as AiIcons from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Works = () => {
   return (
@@ -10,30 +13,40 @@ const Works = () => {
       <section>
         <div className="cards">
           <div className="card">
-            <h2>Project Name</h2>
-            <p>Project Description</p>
-            <div className="stack">
-              <p>Html</p>
-              <p>Css</p>
-              <p>Javascript</p>
+            <h3 className="card-title">Todo List App</h3>
+            <div className="card-content">
+              <p className="description">A simple todo list that helps to manage your daily tasks</p>
+              <ul className="stack">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+              </ul>
+              <div className="cta-buttons">
+                <Link to={{ pathname: "https://github.com/iwa-temmy/todo-app" }}><AiIcons.AiOutlineGithub /></Link>
+                <Link to={{ pathname: "https://devctodoapp.netlify.app/" }}><FiIcons.FiLink /></Link>
+              </div>
             </div>
           </div>
           <div className="card">
-            <h2>Project Name</h2>
-            <p>Project Description</p>
-            <div className="stack">
-              <p>Html</p>
-              <p>Css</p>
-              <p>Javascript</p>
+            <h3 className="card-title">Todo List App</h3>
+            <div className="card-content">
+              <p className="description">A simple todo list that helps to manage your daily tasks</p>
+              <ul className="stack">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+              </ul>
             </div>
           </div>
           <div className="card">
-            <h2>Project Name</h2>
-            <p>Project Description</p>
-            <div className="stack">
-              <p>Html</p>
-              <p>Css</p>
-              <p>Javascript</p>
+            <h3 className="card-title">Todo List App</h3>
+            <div className="card-content">
+              <p className="description">A simple todo list that helps to manage your daily tasks</p>
+              <ul className="stack">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+              </ul>
             </div>
           </div>
         </div>
