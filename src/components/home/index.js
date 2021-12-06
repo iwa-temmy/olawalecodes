@@ -8,9 +8,9 @@ const Home = () => {
       <Navbar />
       <section className="hero">
         <main>
-          <p>Hi, I'm Olawale</p>
-          <h1>Frontend Developer.Aspiring FullStack Developer</h1>
-          <p>Based In Oyo State, Nigeria.Focused on creating webpages that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthusiast.</p>
+          <p className="animate__animated animate__fadeInDown">Hi, I'm Olawale</p>
+          <h1 className="animate__animated animate__fadeInDown">Frontend Developer.Aspiring FullStack Developer</h1>
+          <p className="animate__animated animate__fadeInDown">Based In Oyo State, Nigeria.Focused on creating webpages that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthusiast.</p>
         </main>
         <aside>
           <img src={Mee} alt="Iwaloye Olawale Samuel" />
