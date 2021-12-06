@@ -3,23 +3,26 @@ import { Link } from 'react-router-dom';
 import * as FiIcons from "react-icons/fi";
 import * as AiIcons from 'react-icons/ai';
 
-const Card = () => {
+const Card = props => {
+  const { project } = props;
+
+  const { id, title, description, stack, github_url, app_url } = project;
   return (
-    <div className="card">
-      <h3 className="card-title">Todo List App</h3>
+    <div className="card" key={id}>
+      <h3 className="card-title">{title}</h3>
       <div className="card-content">
-        <p className="description">A simple todo list that helps to manage your daily tasks and retains data after reloading the page.</p>
+        <p className="description">{description}</p>
         <ul className="stack">
-          <li>Html</li>
-          <li>Css</li>
-          <li>Javascript</li>
+          {stack.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
         <div className="cta-buttons">
-          <Link className="github-link" to={{ pathname: "https://github.com/iwa-temmy/todo-app" }}><AiIcons.AiOutlineGithub /></Link>
-          <Link className="app-link" to={{ pathname: "https://devctodoapp.netlify.app/" }}><FiIcons.FiLink /></Link>
+          <Link className="github-link" to={{ pathname: github_url }}><AiIcons.AiOutlineGithub /></Link>
+          <Link className="app-link" to={{ pathname: app_url }}><FiIcons.FiLink /></Link>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

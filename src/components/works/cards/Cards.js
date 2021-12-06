@@ -1,12 +1,15 @@
 import React from 'react'
+import { projects } from '../../../database';
 import Card from '../card/Card';
 
-const cards = () => {
+const Cards = () => {
   return (
     <div className="cards">
-      <Card />
+      {projects.map(project => (
+        <Card project={project} />
+      ))}
     </div>
   )
 }
 
-export default cards
+export default Cards;
