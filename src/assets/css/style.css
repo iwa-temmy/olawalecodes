@@ -12,7 +12,7 @@ body {
 
 .logo {
   height: 40px;
-  margin: 2rem;
+  margin: 2rem 4rem;
 }
 
 a {
@@ -38,6 +38,25 @@ a {
   padding: 0 1rem;
 }
 
+.social-links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 3rem;
+}
+.social-links a {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+}
+.social-links::after {
+  display: block;
+  content: "";
+  border-top: 0.1rem solid #fff;
+  width: 4rem;
+  margin: 2rem -0.6rem;
+  transform: rotate(90deg);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -57,6 +76,7 @@ a {
 
 .home {
   max-height: 100vh;
+  position: relative;
 }
 .home .hero {
   display: flex;
@@ -65,12 +85,12 @@ a {
   align-items: center;
 }
 .home .hero main {
-  margin: 2rem;
+  margin: 2rem 4rem;
   margin-top: -6rem;
 }
 .home .hero main h1 {
   font-weight: 600;
-  font-size: 45px;
+  font-size: 2.81rem;
   line-height: 1.0625;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -95,7 +115,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2.5rem;
-  margin: 2rem 0;
+  margin: 2rem;
   padding: 1rem;
 }
 .cards .card {
@@ -140,6 +160,27 @@ a {
 }
 
 @media (max-width: 35em) {
+  .logo {
+    margin: 2rem;
+  }
+
+  .social-links {
+    position: unset;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+    margin: 0 1rem;
+  }
+  .social-links a {
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  .social-links::after {
+    width: 8rem;
+    margin: 1rem 0.5rem;
+    transform: rotate(0deg);
+  }
+
   .home .hero {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -197,5 +238,6 @@ a {
 
   .cards {
     grid-template-columns: repeat(1, 1fr);
+    margin: 2rem 0;
   }
 }

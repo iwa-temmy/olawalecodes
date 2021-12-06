@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from '../navbar';
 import Mee from "../../assets/images/Mee.png";
+import * as FaIcons from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
   return (
@@ -16,6 +19,12 @@ const Home = () => {
           <img src={Mee} alt="Iwaloye Olawale Samuel" />
         </aside>
       </section>
+      <div className="social-links">
+        <Link><FaIcons.FaFacebook /></Link>
+        <Link><FaIcons.FaTwitter /></Link>
+        <Link><FaIcons.FaLinkedin /></Link>
+        <Link><FaIcons.FaGithub /></Link>
+      </div>
     </div>
   )
 }

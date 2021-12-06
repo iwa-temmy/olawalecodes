@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../navbar';
 import Cards from './cards/Cards';
+import * as FaIcons from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Works = () => {
   return (
@@ -11,6 +13,12 @@ const Works = () => {
       <section>
         <Cards />
       </section>
+      <div className="social-links">
+        <Link><FaIcons.FaFacebook /></Link>
+        <Link><FaIcons.FaTwitter /></Link>
+        <Link><FaIcons.FaLinkedin /></Link>
+        <Link><FaIcons.FaGithub /></Link>
+      </div>
     </div>
   )
 }
