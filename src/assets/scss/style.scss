@@ -49,6 +49,14 @@
         letter-spacing: -.01em;
         line-height: 1.38105;
       }
+
+      .stack {
+        .item {
+          margin: 0.25rem 2rem 0.25rem 0;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+        }
+      }
     }
 
     aside {
@@ -189,8 +197,9 @@
       }
     }
   }
+
   //Works Page
-  .cards{
+  .cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
