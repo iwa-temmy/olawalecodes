@@ -5,8 +5,8 @@ const Works = () => {
   return (
     <div>
       <Navbar />
-      <h1>My Works</h1>
-      <p>Here are some of the projects I have worked on </p>
+      <h1 className="text-center">My Works</h1>
+      <p className="text-center">Here are some of the projects I have worked on </p>
       <section>
         <div className="cards">
           <div className="card">

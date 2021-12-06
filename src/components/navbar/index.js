@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from "../../assets/images/logo3.svg";
+import myCV from '../../assets/Olawale_Iwaloye_CV.pdf';
 import { Link, useLocation } from 'react-router-dom';
 import * as GiIcons from "react-icons/gi";
 import * as AiIcons from 'react-icons/ai';
@@ -29,7 +30,7 @@ const Navbar = () => {
           <li className={splitLocation[1] === "" ? "active" : ""}><Link to="/">Home</Link></li>
           <li className={splitLocation[1] === "about" ? "active" : ""}><Link to="/about">About</Link></li>
           <li className={splitLocation[1] === "work" ? "active" : ""}><Link to="/work">Work</Link></li>
-          <li className={splitLocation[1] === "resume" ? "active" : ""}><Link to="/resume">Resume</Link></li>
+          <li className={splitLocation[1] === "resume" ? "active" : ""}><a href={myCV} download="olawale_IwaloyeCV.pdf">Resume</a></li>
         </ul>
       </nav>
     </header>

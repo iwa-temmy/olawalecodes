@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 1.5rem;
 
   .nav-toggle {
     display: none;
@@ -51,7 +52,6 @@
     }
 
     aside {
-      // width: 70%;
 
       img {
         width: fit-content;
@@ -61,6 +61,13 @@
   }
 }
 
+//Works Page Styles
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem;
+  margin: 0 auto;
+}
 //Media Query
 @media (max-width: 35em) {
   .home {
@@ -88,6 +95,7 @@
 
   .navbar {
     z-index: 1000;
+    padding-right: 1rem;
 
     .navlinks {
       visibility: hidden;
