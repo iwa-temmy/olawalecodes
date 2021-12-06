@@ -20,10 +20,10 @@ const Home = () => {
         </aside>
       </section>
       <div className="social-links">
-        <Link><FaIcons.FaFacebook /></Link>
-        <Link><FaIcons.FaTwitter /></Link>
-        <Link><FaIcons.FaLinkedin /></Link>
-        <Link><FaIcons.FaGithub /></Link>
+        <Link to={{ pathname: "https://www.facebook.com/iwaloye.olawale" }}><FaIcons.FaFacebook /></Link>
+        <Link to={{ pathname: "https://twitter.com/OlawaleCodes?t=tSmL2otamYoEBNihr7e_vw&s=09" }}><FaIcons.FaTwitter /></Link>
+        <Link to={{ pathname: "https://www.linkedin.com/in/olawale-iwaloye-26b80314b/" }}><FaIcons.FaLinkedin /></Link>
+        <Link to={{ pathname: "https://github.com/iwa-temmy" }}><FaIcons.FaGithub /></Link>
       </div>
     </div>
   )
