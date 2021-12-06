@@ -91,11 +91,10 @@ a {
   max-width: 500px;
   height: 200px;
   box-shadow: 0 3px 15px rgba(94, 84, 84, 0.2);
-  transition: 0.7s linear;
   padding: 1rem;
   border-radius: 8px;
   position: relative;
-  z-index: -1;
+  transition: 0.7s linear;
 }
 .cards .card:hover {
   transform: translateY(-5px);
@@ -159,6 +158,7 @@ a {
     background: rgba(0, 0, 0, 0.75);
     gap: 3rem;
     transform: translateX(100%);
+    z-index: 9;
     transition: transform 350ms ease-out;
   }
   .navbar .sr-only {
