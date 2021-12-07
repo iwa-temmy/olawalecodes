@@ -10,7 +10,7 @@ const About = () => {
       <Navbar />
       <section className="hero">
         <main>
-          <h1>I build solution to problems</h1>
+          <p className="role">I build solution to problems</p>
           <p>I'm Olawale Iwaloye, but you can call me Olawalecodes</p>
           <p>I strive to create elegant solutions that surprise and delight users, while keeping complex technical dependencies in mind for implementation, scalability and developer sanity.</p>
           <div className="stack">
