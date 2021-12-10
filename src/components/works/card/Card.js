@@ -18,8 +18,8 @@ const Card = props => {
           ))}
         </ul>
         <div className="cta-buttons">
-          <Link className="github-link" to={{ pathname: github_url }}><AiIcons.AiOutlineGithub /></Link>
-          <Link className="app-link" to={{ pathname: app_url }}><FiIcons.FiLink /></Link>
+          <Link className="github-link" to={{ pathname: github_url }} target="_blank"><AiIcons.AiOutlineGithub /></Link>
+          <Link className="app-link" to={{ pathname: app_url }} target="_blank"><FiIcons.FiLink /></Link>
         </div>
       </div>
     </div >
