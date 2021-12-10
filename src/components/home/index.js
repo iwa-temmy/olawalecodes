@@ -2,8 +2,7 @@ import React from 'react'
 import Navbar from '../navbar';
 import Mee from "../../assets/images/Mee.png";
 import * as FaIcons from "react-icons/fa";
-import { Link } from 'react-router-dom';
-
+import { ExternalLink } from 'react-external-link';
 
 const Home = () => {
   return (
@@ -20,10 +19,10 @@ const Home = () => {
         </aside>
       </section>
       <div className="social-links">
-        <Link to={{ pathname: "https://www.facebook.com/iwaloye.olawale" }}><FaIcons.FaFacebook /></Link>
-        <Link to={{ pathname: "https://twitter.com/OlawaleCodes?t=tSmL2otamYoEBNihr7e_vw&s=09" }}><FaIcons.FaTwitter /></Link>
-        <Link to={{ pathname: "https://www.linkedin.com/in/olawale-iwaloye-26b80314b/" }}><FaIcons.FaLinkedin /></Link>
-        <Link to={{ pathname: "https://github.com/iwa-temmy" }}><FaIcons.FaGithub /></Link>
+        <ExternalLink href="https://www.facebook.com/iwaloye.olawale"><FaIcons.FaFacebook /></ExternalLink>
+        <ExternalLink href="https://twitter.com/OlawaleCodes?t=tSmL2otamYoEBNihr7e_vw&s=09"><FaIcons.FaTwitter /></ExternalLink>
+        <ExternalLink href="https://www.linkedin.com/in/olawale-iwaloye-26b80314b/"><FaIcons.FaLinkedin /></ExternalLink>
+        <ExternalLink href="https://github.com/iwa-temmy"><FaIcons.FaGithub /></ExternalLink>
       </div>
     </div>
   )
