@@ -12,7 +12,7 @@ const Home = () => {
         <main>
           <p className="animate__animated animate__fadeInDown">Hi, I'm Olawale</p>
           <p className="animate__animated animate__fadeInDown role">Frontend Developer. Aspiring FullStack Developer</p>
-          <p className="animate__animated animate__fadeInDown">Based In Oyo State, Nigeria.Focused on creating webpages that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthusiast.</p>
+          <p className="animate__animated animate__fadeInDown">Based In Lagos State, Nigeria.Focused on creating webpages that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthusiast.</p>
         </main>
         <aside>
           <img src={Mee} alt="Iwaloye Olawale Samuel" />

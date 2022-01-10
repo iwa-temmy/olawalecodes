@@ -1,0 +1,164 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none; 
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+.main-container{
+    background: #210A21;
+}
+nav{
+    height: 5rem;
+    width: 100%;
+}
+img.logo{
+    line-height: 5rem;
+    height: 3.5rem;
+    padding: 0.5rem 3.75rem;
+    margin: 0.5rem;
+}
+nav ul{
+    float: right;
+    margin-right: 5.25rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 5rem;
+    margin: 0px 5px;
+}
+nav ul li a{
+    color: #707070;
+    font-size: 1rem;
+    padding: 5px 13px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    border-bottom: 1px solid #210A21;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #707070;
+    float: right;
+    line-height: 80px;
+    margin-right: 33px;
+    display: none;
+}
+#check{
+    display: none;
+}
+.about{
+    height: calc(100vh - 80px);
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem 0rem 2rem;
+}
+.olawalecodes{
+    padding: 0.8rem 0;
+    position: relative;
+}
+.name{
+    position: absolute;
+    top: -85px;
+    color: #707070;
+    font-size: 45px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    width: 600px;
+}
+#mobile{
+    display: none;
+}
+.about-info{
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    width: 700px;
+    padding: 2rem 0;
+}
+#my-image{
+    height: 30.70rem;
+    width: 30rem;
+}
+@media (max-width: 858px){
+    img.logo{
+        padding: 0.5rem 2.35rem;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         background: #210A21;
+         top: 80px;
+         left: -100%;
+         text-align: center;
+         transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #ccc;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .about{
+        height: calc(815px - 5rem);
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .olawalecodes{
+        padding: 1rem;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        line-break: loose;
+    }
+    .name{
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+    #mobile{
+        display: 
+    }
+    #my-image{
+        height: 21.70rem;
+        width: 22.65rem;
+        border-radius: 197px 218px;
+    }
+    .about-info{
+        width: 328px;
+        padding: 1rem 0.8rem;
+    }
+ }
+ @media (max-width: 360px){
+
+ }
