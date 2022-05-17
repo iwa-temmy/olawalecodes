@@ -1,13 +1,18 @@
 import React from 'react'
-import Navbar from '../navbar';
 import * as FaIcons from "react-icons/fa";
 import { ExternalLink } from 'react-external-link';
 import Mee from "../../assets/images/Mee.png";
+//Framer Motion
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const About = () => {
   return (
-    <div className="home">
-      <Navbar />
+    <motion.div 
+      className="home"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: {duration: 0.1} }}
+    >
       <section className="hero">
         <main>
           <p className="role">I build solution to problems</p>
@@ -28,6 +33,8 @@ const About = () => {
               <li className="item">React</li>
               <li className="item">React - Redux</li>
               <li className="item">Antd</li>
+              <li className="item">Tailwind CSS</li>
+              <li className="item">Material UI</li>
             </ul>
             <h3>Tools & Systems</h3>
             <ul className="flex">
@@ -47,7 +54,7 @@ const About = () => {
         <ExternalLink href="https://www.linkedin.com/in/olawale-iwaloye-26b80314b/"><FaIcons.FaLinkedin /></ExternalLink>
         <ExternalLink href="https://github.com/iwa-temmy"><FaIcons.FaGithub /></ExternalLink>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

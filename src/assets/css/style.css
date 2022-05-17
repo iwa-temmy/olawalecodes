@@ -57,6 +57,11 @@ a {
   transform: rotate(90deg);
 }
 
+.animate__animated .animate__fadeInDown {
+  --animate-duration: 800ms;
+  --animate-delay: 0.3s;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -208,7 +213,7 @@ a {
     inset: 0 0 0 40%;
     flex-direction: column;
     padding: min(30vh, 10rem) 4em;
-    background: rgba(0, 0, 0, 0.75);
+    background: hsla(0deg, 0%, 0%, 0.75);
     gap: 3rem;
     transform: translateX(100%);
     z-index: 9;
@@ -232,7 +237,7 @@ a {
   }
   @supports (backdrop-filter: blur(2rem)) {
     .navbar .navlinks {
-      background: rgba(255, 255, 255, 0.07);
+      background: hsla(0deg, 0%, 100%, 0.07);
       backdrop-filter: blur(2rem);
     }
   }

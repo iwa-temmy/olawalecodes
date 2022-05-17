@@ -1,13 +1,19 @@
 import React from 'react'
-import Navbar from '../navbar';
 import Mee from "../../assets/images/Mee.png";
 import * as FaIcons from "react-icons/fa";
 import { ExternalLink } from 'react-external-link';
 
+//Framer Motion
+import { motion } from 'framer-motion/dist/framer-motion';
+
 const Home = () => {
   return (
-    <div className="home">
-      <Navbar />
+    <motion.div 
+    className="home"
+    initial={{width: 0}}
+    animate={{width: "100%"}}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <section className="hero">
         <main>
           <p className="animate__animated animate__fadeInDown">Hi, I'm Olawale</p>
@@ -24,7 +30,7 @@ const Home = () => {
         <ExternalLink href="https://www.linkedin.com/in/olawale-iwaloye-26b80314b/"><FaIcons.FaLinkedin /></ExternalLink>
         <ExternalLink href="https://github.com/iwa-temmy"><FaIcons.FaGithub /></ExternalLink>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
