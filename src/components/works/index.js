@@ -11,7 +11,7 @@ const Works = () => {
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 }  }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 }  }}
     >
       <h1 className="text-center">My Works</h1>
       <p className="text-center">Here are some of the projects I have worked on </p>

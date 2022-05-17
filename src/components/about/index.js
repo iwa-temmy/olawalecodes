@@ -11,14 +11,16 @@ const About = () => {
       className="home"
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: {duration: 0.1} }}
+      exit={{ x: window.innerWidth, transition: {duration: 0.2} }}
     >
       <section className="hero">
         <main>
-          <p className="role">I build solution to problems</p>
-          <p>I'm Olawale Iwaloye, but you can call me Olawalecodes</p>
-          <p>I strive to create elegant solutions that surprise and delight users, while keeping complex technical dependencies in mind for implementation, scalability and developer sanity.</p>
-          <div className="stack">
+            <p className="role animate__animated animate__fadeInDown animate__delay-1s">I build solution to problems</p>
+          <div className="animate__animated animate__fadeInDown animate__delay-2s">
+            <p>I'm Olawale Iwaloye, but you can call me Olawalecodes</p>
+            <p>I strive to create elegant solutions that surprise and delight users, while keeping complex technical dependencies in mind for implementation, scalability and developer sanity.</p>
+          </div>
+          <div className="stack animate__animated animate__fadeInDown animate__delay-3s">
             <h3>Skills</h3>
             <ul className="flex">
               <li className="item">HTML</li>

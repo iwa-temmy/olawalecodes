@@ -24,11 +24,19 @@ export const projects = [
     stack: ["React", "CSS", "Breaking Bad API"]
   },
   {
-    id: 3,
+    id: 4,
     title: "My Books Store",
     description: "A Mini Library to manage and track books that have been read, currently reading, and want to read",
     github_url: "https://github.com/iwa-temmy/todo-app",
     app_url: "https://olawalebookstore.netlify.app",
     stack: ["React", "CSS"]
-  }
+  },
+  {
+    id: 5,
+    title: "SmartComply",
+    description: "SmartComply is a solution that helps payment card industry organizations in attaining their compliance in a short duration of time.",
+    github_url: "",
+    app_url: "https://app.smartcomplyapp.com/auth/login",
+    stack: ["React", "CSS", "Material UI", "React - Redux", "SASS"]
+  },
 ]

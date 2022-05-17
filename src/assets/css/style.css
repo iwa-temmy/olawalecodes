@@ -57,11 +57,6 @@ a {
   transform: rotate(90deg);
 }
 
-.animate__animated .animate__fadeInDown {
-  --animate-duration: 800ms;
-  --animate-delay: 0.3s;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
