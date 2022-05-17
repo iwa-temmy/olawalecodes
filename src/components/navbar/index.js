@@ -27,10 +27,10 @@ const Navbar = () => {
       <button className="nav-toggle" onClick={(e) => handleNavToggle(e)}>{opennav ? <AiIcons.AiOutlineClose /> : <GiIcons.GiHamburgerMenu />}</button>
       <nav>
         <ul className={opennav ? "navlinks sr-only" : "navlinks"} >
-          <li className={splitLocation[1] === "" ? "active" : ""}><Link to="/">Home</Link></li>
-          <li className={splitLocation[1] === "about" ? "active" : ""}><Link to="/about">About</Link></li>
-          <li className={splitLocation[1] === "work" ? "active" : ""}><Link to="/work">Work</Link></li>
-          <li className={splitLocation[1] === "resume" ? "active" : ""}><a href={myCV} download="olawale_IwaloyeCV.pdf">Resume</a></li>
+          <li className={splitLocation[1] === "" ? "active" : ""} onClick={handleNavToggle}><Link to="/">Home</Link></li>
+          <li className={splitLocation[1] === "about" ? "active" : ""} onClick={handleNavToggle}><Link to="/about">About</Link></li>
+          <li className={splitLocation[1] === "work" ? "active" : ""} onClick={handleNavToggle}><Link to="/work">Work</Link></li>
+          <li className={splitLocation[1] === "resume" ? "active" : ""} onClick={handleNavToggle}><a href={myCV} download="olawale_IwaloyeCV.pdf">Resume</a></li>
         </ul>
       </nav>
     </header>

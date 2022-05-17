@@ -5,8 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 1.5rem;
+  padding: 0 2.5rem 0 3.4rem;
   flex-wrap: nowrap;
+  height: 100px;
 
   .nav-toggle {
     display: none;
@@ -134,9 +135,9 @@
 
 //Media Query
 @media (max-width: 35em) {
-  .logo {
-    padding: 2rem;
-  }
+  // .logo {
+  //   padding: 2rem;
+  // }
 
   .social-links {
     position: unset;
@@ -183,7 +184,7 @@
 
   .navbar {
     z-index: 1000;
-    padding-right: 1rem;
+    padding: 0 1rem;
 
     .navlinks {
       visibility: hidden;
