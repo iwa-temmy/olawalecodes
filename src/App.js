@@ -10,14 +10,16 @@ import { AnimatePresence } from "framer-motion/dist/framer-motion"
 function App() {
   const location = useLocation();
   return (
-    <AnimatePresence>
+    <>
       <Navbar />
-      <Switch location={location} key={location.pathname}>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} exact />
-        <Route path="/work" component={Work} exact />
-      </Switch>
-    </AnimatePresence>
+      <AnimatePresence>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} exact />
+          <Route path="/work" component={Work} exact />
+        </Switch>
+      </AnimatePresence>
+    </>
   );
 }
 
