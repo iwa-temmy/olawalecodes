@@ -12,7 +12,7 @@ body {
 
 .logo {
   height: 40px;
-  margin: 2rem 4rem;
+  padding: 2rem 4rem;
 }
 
 a {
@@ -162,7 +162,7 @@ a {
 
 @media (max-width: 35em) {
   .logo {
-    margin: 2rem;
+    padding: 2rem;
   }
 
   .social-links {
