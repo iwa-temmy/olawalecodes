@@ -5,7 +5,7 @@ import Card from '../card/Card';
 const Cards = () => {
   return (
     <div className="cards">
-      {projects.map(project => (
+      {projects.sort((a,b) => b.id - a.id).map(project => (
         <Card project={project} key={project?.id}/>
       ))}
     </div>

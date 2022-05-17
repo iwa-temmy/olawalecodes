@@ -9,14 +9,6 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Fuseerp Website",
-    description: "The official website of the Fuse ERP software that gives potential clients insights about the features of the application",
-    github_url: "",
-    app_url: "http://fuseerp.com/",
-    stack: ["React JS", "SASS"]
-  },
-  {
-    id: 3,
     title: "Breaking Cast App",
     description: "An encylopedia of the cast of the Breaking Bad TV Series",
     github_url: "https://github.com/iwa-temmy/breaking-bad-app",
@@ -24,12 +16,20 @@ export const projects = [
     stack: ["React JS", "CSS", "Breaking Bad API"]
   },
   {
-    id: 4,
+    id: 3,
     title: "My Books Store",
     description: "A Mini Library to manage and track books that have been read, currently reading, and want to read",
     github_url: "https://github.com/iwa-temmy/todo-app",
     app_url: "https://olawalebookstore.netlify.app",
     stack: ["React JS", "CSS"]
+  },
+  {
+    id: 4,
+    title: "Fuseerp Website",
+    description: "The official website of the Fuse ERP software that gives potential clients insights about the features of the application",
+    github_url: "",
+    app_url: "http://fuseerp.com/",
+    stack: ["React JS", "SASS", "Animate CSS"]
   },
   {
     id: 5,
