@@ -17,8 +17,8 @@ const Home = () => {
       <section className="hero">
         <main>
           <p className="animate__animated animate__fadeInDown animate__delay-1s">Hi, I'm Olawale</p>
-          <p className="animate__animated animate__fadeInDown role animate__delay-2s">Frontend Developer. Aspiring FullStack Developer</p>
-          <p className="animate__animated animate__fadeInDown animate__delay-3s">Based In Lagos State, Nigeria.Focused on creating webpages that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthusiast.</p>
+          <p className="animate__animated animate__fadeInDown role animate__delay-2s">Frontend Developer. Budding FullStack Developer</p>
+          <p className="animate__animated animate__fadeInDown animate__delay-3s">Based In Lagos State, Nigeria.Focused on creating web applications that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthusiast.</p>
         </main>
         <aside>
           <img src={Mee} alt="Iwaloye Olawale Samuel" />
