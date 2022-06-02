@@ -1,5 +1,5 @@
 import React from 'react'
-import Mee from "../../assets/images/Mee.png";
+import Mee from "../../assets/images/animoji.PNG";
 import * as FaIcons from "react-icons/fa";
 import { ExternalLink } from 'react-external-link';
 

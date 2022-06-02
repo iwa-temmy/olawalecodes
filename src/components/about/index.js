@@ -1,7 +1,7 @@
 import React from 'react'
 import * as FaIcons from "react-icons/fa";
 import { ExternalLink } from 'react-external-link';
-import Mee from "../../assets/images/Mee.png";
+import Mee from "../../assets/images/animoji.PNG";
 //Framer Motion
 import { motion } from 'framer-motion/dist/framer-motion';
 
