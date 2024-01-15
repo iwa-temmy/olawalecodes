@@ -79,6 +79,6 @@ export const projects = [
       "The official website of the Smartcomply, the first and number one compliance tech in Africa, aims to attend to compliance needs of financial institutions/card processing companies",
     github_url: "",
     app_url: "http://smartcomplyapp.com/",
-    stack: ["Next JS", "Tailwind", "Framer Motion"],
+    stack: ["React JS", "Tailwind CSS", "Framer Motion", "Vite"],
   },
 ];
