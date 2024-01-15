@@ -157,6 +157,10 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-left: 0;
+}
+.cards .card .card-content .stack li span {
+  margin-left: -2px;
 }
 .cards .card .card-content .cta-buttons a {
   font-size: 18px;

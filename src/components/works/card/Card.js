@@ -14,7 +14,9 @@ const Card = (props) => {
         <p className="description">{description}</p>
         <ul className="stack">
           {stack.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index}>
+              <span>{item}</span>
+            </li>
           ))}
         </ul>
         <div className="cta-buttons">
@@ -26,7 +28,7 @@ const Card = (props) => {
             >
               <AiIcons.AiOutlineGithub />
             </Link>
-          )}  
+          )}
           <Link className="app-link" to={{ pathname: app_url }} target="_blank">
             <FiIcons.FiLink />
           </Link>

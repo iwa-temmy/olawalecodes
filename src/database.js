@@ -1,29 +1,47 @@
 export const projects = [
   {
     id: 1,
-    title: "Todo List App",
+    title: "ProddlySpace",
     description:
-      "A simple todo list that helps to manage your daily tasks and retains data after reloading the page.",
-    github_url: "https://github.com/iwa-temmy/todo-app",
-    app_url: "https://devctodoapp.netlify.app",
-    stack: ["React JS", "Sass", "LocalStorage"],
+      "A E-commerce platform that helps you host your store for free and provides access to million of shoppers daily to get you the visibility and sale you desire",
+    // github_url: "https://github.com/iwa-temmy/todo-app",
+    app_url: "https://store.proddly.com",
+    stack: [
+      "Next JS",
+      "Redux",
+      "Axios",
+      "Headless UI",
+      "PayStack",
+      "Formik",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
   },
   {
     id: 2,
-    title: "Breaking Cast App",
-    description: "An encylopedia of the cast of the Breaking Bad TV Series",
-    github_url: "https://github.com/iwa-temmy/breaking-bad-app",
-    app_url: "https://breakingbadencyclopedia.netlify.app/",
-    stack: ["React JS", "CSS", "Breaking Bad API"],
+    title: "Proddly Shoppers App",
+    description:
+      "A E-commerce platform that helps you find things quicker and faster and also takes your shopping experienc to a whole new level",
+    // github_url: "https://github.com/iwa-temmy/breaking-bad-app",
+    app_url: "https://proddly.com",
+    stack: [
+      "Next JS",
+      "Sass",
+      "React Query",
+      "Axios",
+      "framer Motion",
+      "Headless UI",
+      "Tailwind CSS",
+    ],
   },
   {
     id: 3,
-    title: "My Books Store",
+    title: "Radease",
     description:
-      "A Mini Library to manage and track books that have been read, currently reading, and want to read",
-    github_url: "https://github.com/iwa-temmy/todo-app",
-    app_url: "https://olawalebookstore.netlify.app",
-    stack: ["React JS", "CSS"],
+      "Radease, a healthcare company based in Nigeria, is driven by a profound vision to bring about transformative changes within the industry.",
+    // github_url: "https://github.com/iwa-temmy/todo-app",
+    app_url: "https://radease.com",
+    stack: ["React JS", "Sass", "Vite", "Tailwind CSS", "Framer - Motion"],
   },
 
   {
@@ -42,8 +60,8 @@ export const projects = [
     description:
       "SmartComply is a solution that helps payment card industry organizations in attaining their compliance in a short duration of time.",
     github_url: "",
-    app_url: "https://app.smartcomplyapp.com/auth/login",
-    stack: ["React JS", "CSS", "Material UI", "React - Redux", "SASS"],
+    app_url: "https://app.smartcomply.com/auth/login",
+    stack: ["React JS", "Sass", "Material UI", "React - Redux", "SASS"],
   },
   {
     id: 6,
