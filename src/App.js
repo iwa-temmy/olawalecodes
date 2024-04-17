@@ -47,10 +47,10 @@ function App() {
   return (
     <>
       <div style={{ color: "red", background: "white", height: "50px", display: "flex", direction: "row" }}>
-        <p>Supported Models: {models?.join(", ")}</p>
         <p>Resolution: {resolution}</p>
-        <p>Model {models?.join(" or ")}</p></div>
-      <p>Platform {message}</p>
+        <p>Model {models?.join(" or ")}</p>
+        <p>Platform {message}</p>
+      </div>
 
       <Navbar />
       <AnimatePresence>
