@@ -6,9 +6,28 @@ import Navbar from "./components/navbar";
 
 //Framer Motion
 import { AnimatePresence } from "framer-motion/dist/framer-motion"
+import { useEffect } from "react";
 
 function App() {
   const location = useLocation();
+
+  useEffect(() => {
+    const fetchDeviceInfo = async () => {
+      const res = await navigator.userAgentData
+        .getHighEntropyValues([
+          "architecture",
+          "model",
+          "platform",
+          "platformVersion",
+          "fullVersionList"
+        ])
+      console.log({ res })
+      window.alert(`Your phone is ${res?.model} `)
+    }
+    fetchDeviceInfo();
+
+
+  }, [])
   return (
     <>
       <Navbar />
