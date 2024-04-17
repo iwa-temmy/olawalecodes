@@ -23,7 +23,8 @@ function App() {
           "fullVersionList"
         ])
       console.log({ res })
-      setMessage(`Your phone is ${res?.model} `)
+      setMessage(JSON.stringify(navigator.userAgentData))
+      console.log(JSON.stringify(navigator.userAgentData))
     }
     fetchDeviceInfo();
 
