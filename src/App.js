@@ -3,16 +3,16 @@ import Home from "./components/home";
 import About from './components/about';
 import Work from "./components/works";
 import Navbar from "./components/navbar";
-import { getDeviceInfo } from "./detect-device";
+// import { getDeviceInfo } from "./detect-device";
 //Framer Motion
 import { AnimatePresence } from "framer-motion/dist/framer-motion"
-import { useEffect, useState } from "react";
+import { useEffect, } from "react";
 
 function App() {
   const location = useLocation();
-  const [message, setMessage] = useState("")
+  // const [message, setMessage] = useState("")
 
-  const { models, resolution } = getDeviceInfo();
+  // const { models, resolution } = getDeviceInfo();
 
   useEffect(() => {
     const fetchDeviceInfo = async () => {
@@ -25,7 +25,7 @@ function App() {
           "fullVersionList"
         ])
       console.log({ res })
-      setMessage(res?.platform)
+      // setMessage(res?.platform)
       console.log(JSON.stringify(navigator.userAgentData))
     }
     fetchDeviceInfo();
@@ -46,11 +46,11 @@ function App() {
 
   return (
     <>
-      <div style={{ color: "red", background: "white", height: "50px", display: "flex", direction: "row" }}>
+      {/* <div style={{ color: "red", background: "white", height: "50px", display: "flex", direction: "row" }}>
         <p>Resolution: {resolution}</p>
         <p>Model {models?.join(" or ")}</p>
         <p>Platform {message}</p>
-      </div>
+      </div> */}
 
       <Navbar />
       <AnimatePresence>
