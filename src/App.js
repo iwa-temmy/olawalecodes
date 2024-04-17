@@ -32,6 +32,8 @@ function App() {
 
 
   }, [])
+
+  console.log({ message })
   return (
     <>
       <div style={{ color: "red", background: "white", height: "50px", display: "flex", direction: "row" }}><p>OpenGL Renderer: {glRenderer}</p>
