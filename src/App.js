@@ -3,7 +3,7 @@ import Home from "./components/home";
 import About from './components/about';
 import Work from "./components/works";
 import Navbar from "./components/navbar";
-import { getDeviceInfo, getModels } from "./detect-device";
+import { getDeviceInfo } from "./detect-device";
 //Framer Motion
 import { AnimatePresence } from "framer-motion/dist/framer-motion"
 import { useEffect, useState } from "react";
@@ -12,7 +12,7 @@ function App() {
   const location = useLocation();
   const [message, setMessage] = useState("")
 
-  const { glRenderer, models, resolution } = getDeviceInfo();
+  const { models, resolution } = getDeviceInfo();
 
   useEffect(() => {
     const fetchDeviceInfo = async () => {
@@ -33,13 +33,24 @@ function App() {
 
   }, [])
 
+  navigator.userAgentData
+    .getHighEntropyValues([
+      "architecture",
+      "model",
+      "platformVersion",
+      "fullVersionList",
+    ])
+    .then((values) => console.log(values));
+
   console.log({ message })
+
   return (
     <>
-      <div style={{ color: "red", background: "white", height: "50px", display: "flex", direction: "row" }}><p>OpenGL Renderer: {glRenderer}</p>
+      <div style={{ color: "red", background: "white", height: "50px", display: "flex", direction: "row" }}>
         <p>Supported Models: {models?.join(", ")}</p>
         <p>Resolution: {resolution}</p>
-        <p>Model {getModels()?.join(" or ")}</p></div>
+        <p>Model {models?.join(" or ")}</p></div>
+
       <Navbar />
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
