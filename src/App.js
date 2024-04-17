@@ -25,7 +25,7 @@ function App() {
           "fullVersionList"
         ])
       console.log({ res })
-      setMessage(JSON.stringify(navigator.userAgentData))
+      setMessage(res?.platform)
       console.log(JSON.stringify(navigator.userAgentData))
     }
     fetchDeviceInfo();
@@ -33,16 +33,16 @@ function App() {
 
   }, [])
 
-  navigator.userAgentData
-    .getHighEntropyValues([
-      "architecture",
-      "model",
-      "platformVersion",
-      "fullVersionList",
-    ])
-    .then((values) => console.log(values));
+  // navigator.userAgentData
+  //   .getHighEntropyValues([
+  //     "architecture",
+  //     "model",
+  //     "platformVersion",
+  //     "fullVersionList",
+  //   ])
+  //   .then((values) => console.log(values));
 
-  console.log({ message })
+  // console.log({ message })
 
   return (
     <>
@@ -50,6 +50,7 @@ function App() {
         <p>Supported Models: {models?.join(", ")}</p>
         <p>Resolution: {resolution}</p>
         <p>Model {models?.join(" or ")}</p></div>
+      <p>Platform {message}</p>
 
       <Navbar />
       <AnimatePresence>
