@@ -1,4 +1,4 @@
-let canvas, gl, glRenderer, models;
+let models;
 
 const devices = [
     ["a7", "640x1136", ["iPhone 5", "iPhone 5s"]],
