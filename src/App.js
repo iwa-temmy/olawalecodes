@@ -31,7 +31,7 @@ function App() {
   }, [])
   return (
     <>
-      <div style={{ color: "red", background: "white" }}>{message}</div>
+      <div style={{ color: "red", background: "white", height: "50px" }}>{message}</div>
       <Navbar />
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
