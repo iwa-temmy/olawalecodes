@@ -6,10 +6,11 @@ import Navbar from "./components/navbar";
 
 //Framer Motion
 import { AnimatePresence } from "framer-motion/dist/framer-motion"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const location = useLocation();
+  const [message, setMessage] = useState("")
 
   useEffect(() => {
     const fetchDeviceInfo = async () => {
@@ -22,7 +23,7 @@ function App() {
           "fullVersionList"
         ])
       console.log({ res })
-      window.alert(`Your phone is ${res?.model} `)
+      setMessage(`Your phone is ${res?.model} `)
     }
     fetchDeviceInfo();
 
@@ -30,6 +31,7 @@ function App() {
   }, [])
   return (
     <>
+      <div style={{ color: "red", background: "white" }}>{message}</div>
       <Navbar />
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
