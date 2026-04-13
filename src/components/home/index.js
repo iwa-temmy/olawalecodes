@@ -8,7 +8,7 @@ import { motion } from 'framer-motion/dist/framer-motion';
 
 const Home = () => {
   return (
-    <motion.div 
+    <motion.div
     className="home"
     initial={{width: 0}}
     animate={{width: "100%"}}
@@ -17,7 +17,7 @@ const Home = () => {
       <section className="hero">
         <main>
           <p className="animate__animated animate__fadeInDown animate__delay-1s">Hi, I'm Olawale</p>
-          <p className="animate__animated animate__fadeInDown role animate__delay-2s">Frontend Developer. Budding FullStack Developer</p>
+          <p className="animate__animated animate__fadeInDown role animate__delay-2s">Senior Frontend Engineer. FullStack Developer</p>
           <p className="animate__animated animate__fadeInDown animate__delay-3s">Based In Lagos State, Nigeria.Focused on creating web applications that strike a balance between functional and aesthetic designs. Sometimes a music junkie and also a car enthusiast.</p>
         </main>
         <aside>
